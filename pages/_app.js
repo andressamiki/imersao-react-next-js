@@ -1,7 +1,11 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import db from '../db.json';
+import Header from '../src/components/Header';
 
 const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+
   body {
     margin: 0;
     padding: 0;
@@ -20,16 +24,17 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
   }
-`
-const theme = db.theme;
+`;
+const { theme } = db;
 
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <Header />
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }

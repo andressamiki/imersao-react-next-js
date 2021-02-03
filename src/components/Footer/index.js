@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 // src/components/Footer/index.js
 const FooterWrapper = styled.footer`
@@ -6,7 +6,8 @@ const FooterWrapper = styled.footer`
   padding: 20px;
   display: flex;
   align-items: center;
-  border-radius: 6px; 
+  border-radius: 4px;
+  margin-bottom: 60px;
   img {
     width: 58px;
     margin-right: 23px;
@@ -33,7 +34,7 @@ export default function Footer(props) {
         <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
       </a>
       <p>
-        Orgulhosamente criado durante
+        Criado durante
         {' '}
         a
         {' '}
@@ -43,4 +44,4 @@ export default function Footer(props) {
       </p>
     </FooterWrapper>
   );
-};
+}
