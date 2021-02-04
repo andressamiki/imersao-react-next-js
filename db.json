@@ -4,9 +4,21 @@
     "description": "Teste os seus conhecimentos sobre Lindinha, Florzinha, Docinho e suas aventuras em Townsville.",
     "link": "https://powerpuff-girls-quiz.andressamiki.vercel.app/",
     "questions": [
-        
+        {
+            "image": "https://conteudo.imguol.com.br/c/entretenimento/96/2017/08/23/desenho-as-meninas-superpoderosas-1503513019197_v2_900x506.jpg",
+            "title": "Quem criou As Meninas Superpoderosas?",
+            "description": " ",
+            "answer": 2,
+            "alternatives": [
+                "Tíbio e Perônio",
+                "Drauzio Varella",
+                "Professor Utônio",
+                "Professor Curt Connors"
+            ]
+        }
     ],
     "external": [
+        "https://mgs-quiz.mmazoni.vercel.app/"
     ],
     "theme": {
         "colors": {
